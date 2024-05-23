@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import LoginButton from "../components/auth/login-button";
 import { poppins } from "@/utils/fonts";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
         <div>
           <LoginButton>
             <Button variant={"secondary"} size={"lg"}>
-              Sign in
+              <Link href="/login">Sign in</Link>
             </Button>
           </LoginButton>
         </div>
